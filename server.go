@@ -24,10 +24,16 @@ func getTime(w http.ResponseWriter, r *http.Request) {
 
 	jsonResponse, err := json.Marshal(timeResponse)
 	if err != nil {
+		InternalServerErrorHandler(w, r)
 		return
 	}
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	w.Write(jsonResponse)
+}
+
+func InternalServerErrorHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusInternalServerError)
+	w.Write([]byte("500 Internal Server Error"))
 }
