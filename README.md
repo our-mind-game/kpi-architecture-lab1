@@ -2,3 +2,5 @@
 
 Hello, I am Pavlo Vlasiuk
 This is my first kpi architecture laboratory
+
+My name is Chernykova Daria, and I`m very excited to work with Pavlo.
