@@ -5,3 +5,4 @@ This is our first kpi architecture laboratory
 
 My name is Chernykova Daria, and I`m very excited to work with Pavlo.
 
+Our work place is the smart shelter "CLUST space".
